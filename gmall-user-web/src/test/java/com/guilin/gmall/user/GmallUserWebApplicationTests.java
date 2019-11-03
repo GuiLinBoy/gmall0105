@@ -1,13 +1,13 @@
-package com.guiglin.gmall.user;
-
+package com.guilin.gmall.user;
+/*
+import org.junit.jupiter.api.Test;*/
 import org.junit.Test;
-
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GmallUserApplicationTests {
+class GmallUserWebApplicationTests {
 
-    @Test
+    /*@Test*/
     void contextLoads() {
     }
 

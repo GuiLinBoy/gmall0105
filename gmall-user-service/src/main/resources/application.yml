@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gmall_study?characterEncoding=UTF-8&serverTimezone=UTC
+  #dubbo的配置文件
+  dubbo:
+    #dubbo中的服务名称
+    application: user-service
+    #dubbo的通讯协议名称
+    protocol:
+      name: dubbo
+    #zookeeper的注册中心地址
+    registry:
+      address: 192.168.152.106:2181
+      #zookeeper的通讯协议名称
+      protocol: zookeeper
+      #dubbo的服务面路径
+    base-package: com.guilin.gmall
+#    consumer:
+#      #设置超时时间
+#      timeout: 600000
+#      #检查服务是否存在
+#      check: false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+
+server:
+  port: 8070
